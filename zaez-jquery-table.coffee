@@ -79,7 +79,7 @@
 		getDefaults: ->
 			defaults
 		updateDefaults: (settings)->
-			defaults = $.extend {}, defaults, settings
+			defaults = $.extend true, defaults, settings
 			defaults
 	$.fn.ztable = (settings)->
 		settings = $.extend true, defaults, settings
